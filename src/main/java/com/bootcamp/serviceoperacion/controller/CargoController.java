@@ -1,9 +1,7 @@
 package com.bootcamp.serviceoperacion.controller;
 
 import com.bootcamp.serviceoperacion.entity.Cargo;
-import com.bootcamp.serviceoperacion.entity.Pago;
 import com.bootcamp.serviceoperacion.service.CargoService;
-import com.bootcamp.serviceoperacion.service.PagoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;
@@ -16,7 +14,6 @@ public class CargoController {
 
     @Autowired
     private CargoService cargoService;
-
 
     @GetMapping
     public Flux<Cargo> findAll(){

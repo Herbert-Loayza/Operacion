@@ -36,9 +36,8 @@ public class PagoController {
     }
 
     @DeleteMapping("/{id}")
-    public Mono<Void> delete(@PathVariable String id) {
-        return pagoService.deleteById(id);
+    public Mono<Void> delete(@PathVariable String id){
+            return pagoService.deleteById(id);
     }
-
 
 }
